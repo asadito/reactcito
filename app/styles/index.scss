@@ -1,0 +1,96 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
+
+$grey: #e5e5e5;
+$blue: #278bff;
+$black: #4b4b4b;
+$white: #ffffff;
+
+@mixin center {
+	width: 200px;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: $grey;
+	font-family: 'Roboto', sans-serif;
+	color: $black;
+
+	#root > div,
+	.container {
+		width: 340px;
+		max-width: 90%;
+		margin: 48px auto 0;
+		background-color: $white;
+		overflow: hidden;
+		box-shadow: 0 2px 16px rgba(80, 80, 100, 0.1);
+		position: relative;
+
+		h1 {
+			margin: 0 0 128px;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 22px 0 18px;
+			border-bottom: 1px solid $grey;
+			font-size: 12px;
+			line-height: 12px;
+			letter-spacing: 2px;
+		}
+
+		input {
+			@include center();
+			display: block;
+			&[type=text] {
+				color: $blue;
+				border: none;
+				border-bottom: 2px dotted $grey;
+				transition: all, 0.5s;
+				font-size: 42px;
+				font-weight: bold;
+				text-align: center;
+				&:focus {
+					outline: none;
+					border-bottom-color: $blue;
+				}
+			}
+			&[type=range] {
+				margin-top: 48px;
+				margin-bottom: 128px;
+				-webkit-appearance: none;
+
+				&:focus {
+					outline: none;
+				}
+
+				&::-webkit-slider-runnable-track,
+				&::-webkit-slider-thumb {
+					-webkit-appearance: none;
+				}
+
+				&::-webkit-slider-thumb {
+					background-color: $blue;
+					width: 24px;
+					height: 24px;
+					border-radius: 50%;
+					margin-top: -8px;
+					box-shadow: 0 2px 4px rgba(80, 80, 100, 0.5);
+				}
+
+				&::-webkit-slider-runnable-track {
+					background-color: $grey;
+					height: 10px;
+					border-radius: 5px;
+				}
+			}
+		}
+
+		p {
+			@include center();
+			text-align: center;
+			font-size: 14px;
+			line-height: 32px;
+		}
+	}
+}

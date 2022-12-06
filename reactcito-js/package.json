@@ -1,0 +1,20 @@
+{
+	"name": "mini-react",
+	"version": "1.0.0",
+	"description": "basic react functionalities in a custom library",
+	"main": "mini-react.js",
+	"scripts": {
+		"build": "webpack"
+	},
+	"author": "Mike rueda @mikeledicen",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/preset-env": "^7.6.3",
+		"babel-loader": "^8.0.6",
+		"html-webpack-plugin": "^3.2.0",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.9",
+		"webpack-dev-server": "^3.8.2"
+	}
+}
