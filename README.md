@@ -8,4 +8,6 @@ WIFI: stensul_guest PASS: easyemails
 
 - ¿Por que armariamos nuestro propio React? ¿De que nos sirve?
 - ¿Que es JSX?
-- Armamos nuestro propio render, create element y React state.
+- Armamos nuestro propio render, 
+- create element
+- React state.
